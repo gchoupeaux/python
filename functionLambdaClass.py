@@ -23,14 +23,24 @@ class Circle(object):
 	# class object attributes
 	pi = 3.14
 	
-	def --init--(self, radius = 1):
+	def __init__(self, radius = 1):
 		self.radius = radius
 		
 	def area(self):
 		return self.radius**2*Circle.pi
 		
-	def setRadius(self, radius)
+	# method to reset radius
+	def setRadius(self, radius):
+		self.radius = radius
 	
-	
-	
+	# method for getting radius
+	# same as just calling radius
+	def getRadius(self):
+		return self.radius
+		
+# create an instance
+myCircle = Circle()
+print(myCircle.radius)
+
+myCircle.setRadius(2)
 
